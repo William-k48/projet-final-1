@@ -1,0 +1,557 @@
+* {
+}
+body {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color:white;
+}
+.global {
+  background-color: #0177c0;
+  height: 100%;
+  width: 100%;
+}
+.container {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  height: 80%;
+  background-color:white;
+  width: 80%;
+ 
+  margin: auto;
+  border-radius: 5px;
+ 
+}
+.total {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 5rem;
+  width: 100%;
+}
+.gauche {
+  background-color:white;
+  width: 30%;
+  height: 77.5vh;
+  margin-left: 15px;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0.1em 0.1em 0.5em 0.1em #87CEEB;
+ 
+}
+.gauche p{
+    text-align: center;
+    padding-left: 10px;
+}
+.table{
+  
+    border-collapse:separate;
+    width: 70%;
+    margin: auto;
+    border-spacing: 10px;
+}
+.table tr td a{
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.ligne:hover{
+  box-shadow: 0.1em 0.1em 0.5em 0.1em black;
+    background-color:#c5d1d8 ;
+  transform: scale(1.1);
+    text-transform: uppercase;
+    color: red;
+    cursor: pointer;
+    border: 2px solid #0174bb;
+    .material-symbols-rounded{
+      color: #a1790b;
+    }
+    .change{
+      color: #ff5940;
+    }
+}
+.gauche img{
+    width: 60%;
+    height: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    
+}
+
+td{
+    border: 2px solid black;
+    padding: 5px 2px;
+    border-radius: 10px;
+}
+tr{
+  padding: 5px 2px;
+    
+}
+.material-symbols-rounded{
+  color: #0177c0;
+}
+.align{
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.droite {
+  background-color:white;
+  height: 77.5vh;
+  width: 75%;
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: 18.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+.header {
+  width: 99.5%;
+  height: 8vh;
+  background-color:white;
+  border-radius: 20px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+}
+ .style{
+  color: red;
+}
+.header p{
+    margin-left: 10px;
+}
+.header1{
+    display: flex;
+    align-items: center;
+   gap: 7px;
+   position: relative;
+}
+.para{
+ font-size: 30px;
+}
+.header1 img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 60%;
+}
+.profil{
+  width: 250px;
+  height: 210px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: white;
+  color: #a1780a;
+  z-index: 2000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 70px;
+opacity: 0;
+transition: opacity .5s;
+ 
+
+}
+.header1:hover .profil{
+  opacity: 1;
+ 
+}
+.profil img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.center {
+  width: 99.5%;
+  height: 60vh;
+  background-color:white;
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+  border: 2px solid black;
+}
+.center1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.center1 img{
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+}
+.center1 p{
+font-size: 30px;
+text-align: center;
+}
+.footer {
+  width: 99.5%;
+  height: 8vh;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+  align-content: center;
+}
+.footer p{
+  text-align: center;
+    margin-left:10px;
+    color: black;
+   
+}
+.footer span{
+  color: red;
+}
+.center1 {
+  height: 40vh;
+  width: 40%;
+  background-color: white;
+  margin-left:10px;
+  margin-top: 2rem;
+  border: 2px solid black;
+}
+.center2 {
+  height: 40vh;
+  width: 60%;
+  background-color: white;
+  margin-right: 7px;
+  margin-top: 2rem;
+  border: 2px solid black;
+}
+.center2 p{
+    border-bottom: 1px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/*mon code*/
+.animate-text {
+    display: inline-block; /* Permet d'animer chaque lettre individuellement */
+    overflow: hidden; /* Cache les lettres qui ne sont pas encore visibles */
+  }
+  
+  .animate-text span {
+    display: inline-block;
+    opacity: 0; /* Les lettres sont invisibles au départ */
+  }
+
+
+#frame{
+  width: 99.5%;
+  height: 100%;
+ 
+
+}
+
+  @media screen and (max-width:1400px) {
+    #frame{
+      .center{
+        display: flex;
+        flex-direction: column;
+        width: 150vh;
+        height: 90vh;
+        gap: 10px;
+      
+      }
+     .droite{
+      width: 100vh;
+     }
+     .center1{
+      width: 100vh;
+      margin: auto;
+     }
+     .center2{
+      width: 120vh;
+      margin: auto;
+     }
+  }
+  }
+  @media screen and (max-width:1000px) {
+    .header p{
+      font-size: 16px;
+    }
+    .gauche img{
+      padding-left: 20px;
+      padding-bottom: 5px;
+      gap: 5px;
+    }
+    #frame{
+    display: flex;
+    flex-direction: column;
+    }
+   td{
+    padding: 5px 5px;
+    font-size: 11.5px;
+   }
+   .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 0px;
+    height: 10vh;
+   }
+   header1{
+    display: flex;
+    
+   }
+   .header1 img{
+    width: 20px;
+    height: 20px;
+    
+   }
+   .footer{
+    height: 10vh;
+   }
+  }
+  @media screen and (max-width:650px) {
+    container{
+      display: flex;
+      flex-direction: column;
+    } 
+    .total{
+      display: flex;
+      flex-direction: row;
+    }
+    .gauche{
+      width: 100%;
+    }
+    .droite{
+      width: 100%;
+    }
+    .profil{
+     
+    display: none;
+     
+    
+    }
+  }
+  @media screen and ((min-width:1000px) and (max-width:1390px)){
+    td{
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+  }
+@media screen and (max-width:430px) {
+  #toggleButton{
+    display: flex;
+  }
+  .logo img{
+    padding-left: 69px;
+  }
+  .table{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    border-collapse:separate;
+    width: 60%;
+    margin: auto;
+    border-spacing: 10px;
+}
+.center{
+  display: flex;
+  flex-direction: column;
+}
+}
+@media screen and (max-width:375px){
+  .table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-collapse:separate;
+    width: 70%;
+    margin: auto;
+    border-spacing: 5px;
+}
+td{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+  border: 2px solid #0e84bb;
+  padding: 2px 2px;
+  border-radius: 10px;
+}
+tr{
+padding: 5px 2px;
+}
+header {
+  font-size: 15px;
+}
+}
+
+
+  /* Style pour le bouton de réduction */
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  font-size: 10px;
+  color: #0e84bb;
+}
+
+/* Style pour la section réduite */
+.gauche.reduced {
+  width: 70px; /* Largeur réduite */
+  overflow: hidden; /* Cache le contenu dépassant */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gauche.reduced img {
+  display: flex; 
+  padding-left: 8px;
+}
+
+.gauche.reduced .table {
+  width: 100%;
+}
+
+.gauche.reduced .table td {
+  padding: 2px; /* Réduit l'espacement */
+}
+
+.gauche.reduced .table span:not(.material-symbols-rounded) {
+  display: none; /* Cache le texte */
+}
+
+.gauche.reduced .material-symbols-rounded {
+  font-size: 24px; /* Taille des icônes */
+  border-radius: 60px;
+}
+
+/* Mode sombre */
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode .global {
+  background-color: #333;
+}
+
+body.dark-mode .gauche,
+body.dark-mode .droite {
+  background-color: black;
+  border: 1px solid #444;
+}
+
+body.dark-mode .btn {
+  background-color: #555;
+  color: white;
+}
+.header.dark-mode,
+ body.droite.dark-mode.footer{
+  background-color: black;
+  color: white;
+}
+
+/* Style pour le bouton de réduction */
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  color: #0e84bb;
+}
+
+/* Style pour l'icône de changement de mode */
+.btn-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  color: #0e84bb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Même taille que le bouton de réduction */
+  height: 40px;
+  border-radius: 50%; /* Rendre l'icône circulaire */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-toggle:hover {
+  transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+/* Style pour la section réduite */
+.gauche.reduced {
+  width: 60px; /* Largeur réduite */
+  overflow: hidden; /* Cache le contenu dépassant */
+}
+
+.gauche.reduced .table {
+  width: 100%;
+}
+
+.gauche.reduced .table td {
+  padding: 5px 0; /* Réduit l'espacement */
+}
+
+.gauche.reduced .table span:not(.material-symbols-rounded) {
+  display: none; /* Cache le texte */
+}
+
+.gauche.reduced .material-symbols-rounded {
+  font-size: 24px; /* Taille des icônes */
+}
+
+
+
+
+
+
+/* Mode sombre */
+body.dark-mode {
+  background-color: black; /* Fond noir pour tout le body */
+  color: white; /* Texte blanc pour tout le body */
+}
+
+/* Appliquer le fond noir et le texte blanc à tous les éléments enfants */
+body.dark-mode * {
+  background-color: black !important; /* Fond noir pour tous les éléments */
+  color: white !important; /* Texte blanc pour tous les éléments */
+  border-color: white !important; /* Bordures blanches pour tous les éléments */
+}
+
+/* Styles spécifiques pour les icônes en mode sombre */
+body.dark-mode .material-symbols-rounded {
+  color: white; /* Icônes blanches */
+}
+
+/* Styles pour les liens en mode sombre */
+body.dark-mode a {
+  color: white; /* Liens blancs */
+}
+
+/* Styles pour les boutons en mode sombre */
+body.dark-mode .btn {
+  background-color: #333; /* Fond des boutons plus sombre */
+  color: white; /* Texte blanc */
+}
+
+/* Styles pour les bordures en mode sombre */
+body.dark-mode .gauche,
+body.dark-mode .droite,
+body.dark-mode .header,
+body.dark-mode .footer,
+body.dark-mode .center,
+body.dark-mode .center1,
+body.dark-mode .center2 {
+  border-color: white; /* Bordures blanches */
+}

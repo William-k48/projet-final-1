@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Dancing+Script:wght@400..700&family=Martel:wght@200;300;400;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #5372f0;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background-color: #ffff;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.2);
+    border-radius: 6px;
+}
+.choix{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.choix h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    color: #999;
+
+}
+img{
+    width: 60px;
+    height: 60px;
+    margin: 20px 0;
+}
+button{
+    padding: 5px 30px;
+    margin-top: 20px;
+    border: 2px solid #5372f0;
+    background-color: #5372f0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+button:focus{
+    background: #fff;
+    color: #5372f0;
+}
+@media screen and (max-width:650px){
+   
+    button{
+        padding: 5px 10px;
+        margin-top: 20px;
+        border: 2px solid #5372f0;
+        background-color: #5372f0;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: 0.5s;
+        text-transform: capitalize;
+    }
+    choix{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        background-color: #ffff;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0,0, 0.2);
+        border-radius: 6px;
+    }
+}

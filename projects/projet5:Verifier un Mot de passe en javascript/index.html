@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Mot de passe</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <label >Utilisateur</label>
+            <input type="text" required>
+            <label >Mots de passe</label>
+            <input type="password" id="psw" required class="">
+          
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+    <div id="message">
+        <h3>Le mot de passe doit contenir les éléments suivants</h3>
+        <p id="letter" class="invalid">Une lettre miniscule</p>
+        <p id="capital" class="invalid">Une lettre majuscule</p>
+        <p id="number" class="invalid">Un chiffre</p>
+        <p id="length" class="invalid">8 caractères minimum</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
